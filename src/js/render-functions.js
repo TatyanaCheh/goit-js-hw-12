@@ -40,7 +40,7 @@ export async function imagesTemplate(imagesObj) {
         </li>`;
     })
     .join('');
-    refs.gallery.insertAdjacentElement('beforeend',markup );
+    refs.gallery.insertAdjacentHTML('beforeend', markup);
 }
 
 export function showLoader() {
@@ -51,10 +51,10 @@ export function hideLoader() {
 }
 
 export function showLoadMore() {
-    refs.loader.classList.remove('hidden');
+    refs.loadMoreBtn.classList.remove('hidden');
 }
 export function hideLoadMore() {
-    refs.loader.classList.add('hidden');
+    refs.loadMoreBtn.classList.add('hidden');
 }
 
 export function checkEndPages(currentPage, maxPage) {

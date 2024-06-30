@@ -30,9 +30,6 @@
 .input:active {
     border: 1px solid #4e75ff;
 }
-.input:active {
-    border: 1px solid #4e75ff;
-}
 .button,
 .load-more-btn {
     border-radius: 8px;
@@ -68,7 +65,7 @@
 }
 .gallery-image {
     width: 100%;
-    height: auto;
+    height: 200px;
     display: block;
     transition: transform 0.25s;
 }

@@ -2,9 +2,9 @@ import iziToast from "izitoast";
 import "izitoast/dist/css/iziToast.min.css";
 import axios from "axios";
 
-const articlesApi = axios.Axios({
+const articlesApi = axios.create({
     baseURL: 'https://pixabay.com/',
-})
+});
 
 export async function getImages(inputValue, currentPage, perPage) {
     try{
@@ -23,7 +23,7 @@ return res.data;
 } catch (error) {
     iziToast.error({
         title: 'Error',
-          message: `${err}`,
+          message: `${error}`,
           layout: 2,
           displayMode: 'once',
           backgroundColor: '#ef4040',

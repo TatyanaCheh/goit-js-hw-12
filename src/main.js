@@ -1,9 +1,11 @@
 import iziToast from "izitoast";
 import "izitoast/dist/css/iziToast.min.css";
-// Описаний у документації
+
+// Описаний в документації
 import SimpleLightbox from "simplelightbox";
 // Додатковий імпорт стилів
 import "simplelightbox/dist/simple-lightbox.min.css";
+
 
 import { getImages } from "./js/pixabay-api";
 import {showLoader, imagesTemplate, showLoadMore, hideLoadMore, checkEndPages, hideLoader} from './js/render-functions';
@@ -42,7 +44,7 @@ refs.form.addEventListener('submit', async e => {
     }
 
     showLoader();
-
+refs.gallery.innerHTML = ' ';
     try {
         const data = await getImages(inputValue, currentPage, perPage);
         maxPage = Math.ceil(data.totalHits / perPage);
