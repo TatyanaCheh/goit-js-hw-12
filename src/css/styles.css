@@ -7,6 +7,7 @@
 @import url('./reset.css');
 @import url('./vite-promo.css');
 @import url('./header.css');
+@import url('./render-functions.css');
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -22,4 +23,48 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border-width: 5px;
+  border-style: dashed solid solid dotted;
+  border-color: #ff3d00 #ff3d00 transparent #ff3d00;
+  border-radius: 50%;
+  display: inline-block;
+position: relative;
+box-sizing: border-box;
+animation: rotation 1s linear infinite;
+}
+.loader::after {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  left: 20px;
+  top: 30px;
+  border: 10px solid transparent;
+  border-right-color: #ff3d00;
+  transform: rotate(-40deg);
+}@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.div-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 32px 0;
+}
+.hidden {
+  display: none;
+}
+.div-btn-load-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

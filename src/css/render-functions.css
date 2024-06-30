@@ -1,0 +1,115 @@
+.section-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 32px 0;
+}
+
+.input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 272px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    padding: 0 16px;
+    outline: transparent;
+    margin-right: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #808080;
+}
+.input:hover {
+    border: 1px solid #000;
+}
+.input:focus,
+.input:active {
+    border: 1px solid #4e75ff;
+}
+.input:active {
+    border: 1px solid #4e75ff;
+}
+.button,
+.load-more-btn {
+    border-radius: 8px;
+    border: none;
+    padding: 8px 16px;
+    background: #4e75ff;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    color: #fff;
+    height: 40px;
+}
+.button:hover,
+.load-more-btn:hover {
+    background: #6c8cff;
+}
+.load-more-btn {
+    margin: 32px 0;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px 24px;
+    justify-content: center;
+    align-items: center;
+}
+.gallery-item {
+    border: 1px solid #808080;
+    min-width: 360px;
+    height: auto;
+    background: #ffffff;
+}
+.gallery-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.25s;
+}
+.gallery-link {
+    max-height: 360px;
+}
+
+.sl-wrapper.simple-lightbox > .sl-counter,
+.sl-wrapper.simple-lightbox .sl-navigation button,
+.sl-wrapper.simple-lightbox .sl-close {
+  color: #fff !important;
+}
+
+.sl-wrapper.simple-lightbox {
+  background-color: #2e2f42cc !important;
+}
+.text-card-container {
+    height: 48px;
+    align-content: space-around;
+}
+.text-list {
+display: flex;
+justify-content: space-evenly;
+margin: 4px 0;
+}
+.text-item {
+    display: flex;
+    flex-direction: column;
+align-items: center;
+}
+.text-item-name {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33333;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+}
+.text-item-quantity {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+}
